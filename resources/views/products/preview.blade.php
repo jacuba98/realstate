@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Preview</title>
-
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/vendor.min.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/plugins.min.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.min.css')}}">
@@ -20,6 +20,88 @@
 
   </div>
 
+
+
+  <section class="preview">
+    <div class="preview-info">
+      <img src="{{ asset('img/new2.jpg') }}" alt="preview" class="img-preview">
+    </div>
+
+    <div class="col-xl-7 col-lg-6">
+        <div class="product-details-content-area product-details--golden" data-aos="fade-up"
+            data-aos-delay="200">
+            <!-- Start  Product Details Text Area-->
+            <div class="product-details-text">
+                <h4 class="title">Ornare sed consequat</h4>
+                <div class="d-flex align-items-center">
+                    <ul class="review-star">
+                        <li class="fill"><i class="ion-android-star"></i></li>
+                        <li class="fill"><i class="ion-android-star"></i></li>
+                        <li class="fill"><i class="ion-android-star"></i></li>
+                        <li class="fill"><i class="ion-android-star"></i></li>
+                        <li class="empty"><i class="ion-android-star"></i></li>
+                    </ul>
+                    <a href="#" class="customer-review ml-2">(customer review )</a>
+                </div>
+                <div class="price">$80.00</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
+                    tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis
+                    justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id
+                    nulla.</p>
+            </div> <!-- End  Product Details Text Area-->
+            <!-- Start Product Variable Area -->
+            <div class="product-details-variable">
+                <h4 class="title">Available</h4>
+                <!-- Product Variable Single Item -->
+                <div class="variable-single-item">
+                    <div class="product-stock"> <span class="product-stock-in"><i
+                                class="ion-checkmark-circled"></i></span> Hablitado</div>
+                </div>
+                <!-- Product Variable Single Item -->
+                <div class="d-flex align-items-center ">
+
+                    <div class="product-add-to-cart-btn">
+                        <a href="#" class="btn btn-block btn-lg btn-black-default-hover"
+                            data-bs-toggle="modal" data-bs-target="#modalAddcart">+ Agendar</a>
+                    </div>
+                </div> <!-- End  Product Details Meta Area-->
+            </div> <!-- End Product Variable Area -->
+
+            <!-- Start  Product Details Catagories Area-->
+            <div class="product-details-catagory mb-2">
+                <span class="title">CATEGORIES:</span>
+                <ul>
+                    <li><a href="#">BAR STOOL</a></li>
+                    <li><a href="#">KITCHEN UTENSILS</a></li>
+                    <li><a href="#">TENNIS</a></li>
+                </ul>
+            </div> <!-- End  Product Details Catagories Area-->
+            <!-- Start  Product Details Social Area-->
+            <div class="product-details-social">
+                <span class="title">SHARE THIS PRODUCT:</span>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div> <!-- End  Product Details Social Area-->
+        </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
     <!-- Start Product Details Section -->
     <div class="product-details-section">
         <div class="container">
@@ -30,22 +112,22 @@
                         <div class="product-large-image product-large-image-horaizontal swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="product-image-large-image swiper-slide zoom-image-hover img-responsive">
-                                    <img src="assets/images/product/default/home-1/default-1.jpg" alt="">
+                                    <img src="{{ asset('img/casa1.jpg') }}" alt="">
                                 </div>
                                 <div class="product-image-large-image swiper-slide zoom-image-hover img-responsive">
-                                    <img src="assets/images/product/default/home-1/default-2.jpg" alt="">
+                                    <img src="{{ asset('img/new2.jpg') }}" alt="">
                                 </div>
                                 <div class="product-image-large-image swiper-slide zoom-image-hover img-responsive">
-                                    <img src="assets/images/product/default/home-1/default-3.jpg" alt="">
+                                    <img src="{{ asset('img/casa1.jpg') }}" alt="">
                                 </div>
                                 <div class="product-image-large-image swiper-slide zoom-image-hover img-responsive">
-                                    <img src="assets/images/product/default/home-1/default-4.jpg" alt="">
+                                    <img src="{{ asset('img/new2.jpg') }}" alt="">
                                 </div>
                                 <div class="product-image-large-image swiper-slide zoom-image-hover img-responsive">
-                                    <img src="assets/images/product/default/home-1/default-5.jpg" alt="">
+                                    <img src="{{ asset('img/casa1.jpg') }}" alt="">
                                 </div>
                                 <div class="product-image-large-image swiper-slide zoom-image-hover img-responsive">
-                                    <img src="assets/images/product/default/home-1/default-6.jpg" alt="">
+                                    <img src="{{ asset('img/new2.jpg') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -55,19 +137,19 @@
                             class="product-image-thumb product-image-thumb-horizontal swiper-container pos-relative mt-5">
                             <div class="swiper-wrapper">
                                 <div class="product-image-thumb-single swiper-slide">
-                                    <img class="img-fluid" src="assets/images/product/default/home-1/default-1.jpg"
+                                    <img class="img-fluid" src="{{ asset('img/casa1.jpg') }}"
                                         alt="">
                                 </div>
                                 <div class="product-image-thumb-single swiper-slide">
-                                    <img class="img-fluid" src="assets/images/product/default/home-1/default-2.jpg"
+                                    <img class="img-fluid" src="{{ asset('img/new2.jpg') }}"
                                         alt="">
                                 </div>
                                 <div class="product-image-thumb-single swiper-slide">
-                                    <img class="img-fluid" src="assets/images/product/default/home-1/default-3.jpg"
+                                    <img class="img-fluid" src="{{ asset('img/casa1.jpg') }}"
                                         alt="">
                                 </div>
                                 <div class="product-image-thumb-single swiper-slide">
-                                    <img class="img-fluid" src="assets/images/product/default/home-1/default-4.jpg"
+                                    <img class="img-fluid" src="{{ asset('img/new2.jpg') }}"
                                         alt="">
                                 </div>
                                 <div class="product-image-thumb-single swiper-slide">
@@ -110,31 +192,19 @@
                         </div> <!-- End  Product Details Text Area-->
                         <!-- Start Product Variable Area -->
                         <div class="product-details-variable">
-                            <h4 class="title">Available Options</h4>
+                            <h4 class="title">Available</h4>
                             <!-- Product Variable Single Item -->
                             <div class="variable-single-item">
                                 <div class="product-stock"> <span class="product-stock-in"><i
-                                            class="ion-checkmark-circled"></i></span> 200 IN STOCK</div>
+                                            class="ion-checkmark-circled"></i></span> Hablitado</div>
                             </div>
                             <!-- Product Variable Single Item -->
                             <div class="d-flex align-items-center ">
-                                <div class="variable-single-item ">
-                                    <span>Quantity</span>
-                                    <div class="product-variable-quantity">
-                                        <input min="1" max="100" value="1" type="number">
-                                    </div>
-                                </div>
 
                                 <div class="product-add-to-cart-btn">
                                     <a href="#" class="btn btn-block btn-lg btn-black-default-hover"
-                                        data-bs-toggle="modal" data-bs-target="#modalAddcart">+ Add To Cart</a>
+                                        data-bs-toggle="modal" data-bs-target="#modalAddcart">+ Agendar</a>
                                 </div>
-                            </div>
-                            <!-- Start  Product Details Meta Area-->
-                            <div class="product-details-meta mb-20">
-                                <a href="wishlist.html" class="icon-space-right"><i class="icon-heart"></i>Add to
-                                    wishlist</a>
-                                <a href="compare.html" class="icon-space-right"><i class="icon-refresh"></i>Compare</a>
                             </div> <!-- End  Product Details Meta Area-->
                         </div> <!-- End Product Variable Area -->
 

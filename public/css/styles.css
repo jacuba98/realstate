@@ -38,6 +38,7 @@ nav{
   grid-template-rows: auto 1fr auto;
   width: 700px;
 }
+
 .carrusel h2{
   color: var(--very-light-pink);
   font-weight: bold;
@@ -48,6 +49,23 @@ nav{
   width: 670px;
   height: 670px;
   object-fit: cover;
+}
+.preview{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.preview-info img{
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 50px 0 90px;
+}
+.preview p{
+  color: var(--hospital-green);
+  font-weight: bold;
+  font-size: var(--med);
+  margin: 0 0 0 0;
 }
 .about-us{
   display: flex;
