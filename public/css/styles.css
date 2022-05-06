@@ -38,7 +38,6 @@ nav{
   grid-template-rows: auto 1fr auto;
   width: 700px;
 }
-
 .carrusel h2{
   color: var(--very-light-pink);
   font-weight: bold;
@@ -56,16 +55,10 @@ nav{
 }
 
 .preview-info img{
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
   margin: 0 50px 0 90px;
-}
-.preview p{
-  color: var(--hospital-green);
-  font-weight: bold;
-  font-size: var(--med);
-  margin: 0 0 0 0;
 }
 .about-us{
   display: flex;
@@ -78,17 +71,23 @@ nav{
   object-fit: cover;
   border-radius: 0 50px 50px 0;
 }
+.preview titulo{
+  justify-content: flex-end;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100px;
+}
 .about-us titulo{
   justify-content: flex-end;
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 100px;
 }
-.preview titulo{
-  justify-content: flex-end;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  width: 100px;
+.preview p{
+  color: var(--hospital-green);
+  font-weight: bold;
+  font-size: var(--med);
+  margin: 0 0 10px 50px;
 }
 .about-us p{
   color: var(--hospital-green);
@@ -96,12 +95,23 @@ nav{
   font-size: var(--med);
   margin: 100px 0 0 50px;
 }
-
+.preview h1{
+  color: var(--black);
+  font-weight: bold;
+  font-size: var(--lg);
+  margin: 30px 50px 60px 50px;
+}
 .about-us h1{
   color: var(--black);
   font-weight: bold;
   font-size: var(--lg);
   margin: 30px 50px 0 50px;
+}
+.preview h2{
+  color: var(--very-light-pink);
+  font-weight: bold;
+  font-size: var(--lg);
+  margin: 10px 50px 4px 50px;
 }
 .about-us h2{
   color: var(--very-light-pink);
@@ -442,6 +452,9 @@ nav{
 .login-button{
     margin-top: 14px;
     margin-bottom: 30px;
+}
+.reserve-button{
+  margin: 50px 100px 10px 50px;
 }
 
 /*FOOOTER*/
